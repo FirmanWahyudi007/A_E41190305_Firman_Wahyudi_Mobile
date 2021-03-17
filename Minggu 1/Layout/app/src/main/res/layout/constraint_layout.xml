@@ -16,7 +16,7 @@
         app:cardCornerRadius="15dp"
         app:cardElevation="20dp"
         android:id="@+id/cardView"
-        app:cardBackgroundColor="@color/colorAccent"
+        app:cardBackgroundColor="@color/blue_300"
         android:layout_marginBottom="50dp">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -49,11 +49,28 @@
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:cardCornerRadius="15dp"
         app:cardElevation="20dp"
+        app:cardBackgroundColor="@color/blue_50"
         app:layout_constraintVertical_bias="0.781"
         android:id="@+id/cardView2">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/russo_one"
+                android:text="@string/bmw_group"
+                android:textColor="@android:color/background_light"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_goneMarginBottom="8dp" />
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
@@ -61,14 +78,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:id="@+id/imageView"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="70"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.0"
+                android:contentDescription="@string/todo" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:id="@+id/textInputLayout2"
@@ -76,6 +95,7 @@
                 android:layout_marginTop="50dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 app:passwordToggleTint="@color/colorAccent">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -91,6 +111,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:id="@+id/textInputLayout3"
                 android:layout_marginTop="8dp"
+                android:textColorHint="@color/white"
                 app:layout_constraintTop_toBottomOf="@id/textInputLayout2"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 app:passwordToggleTint="@color/colorAccent">
