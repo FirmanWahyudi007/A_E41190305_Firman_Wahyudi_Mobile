@@ -5,6 +5,17 @@
     android:background="#1113">
 
     <ImageView
-        android:layout_width=""
-        android:layout_height=""/>
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@color/primary"/>
+
+    <Button
+        android:layout_width="350px"
+        android:layout_height="150px"
+        android:layout_gravity="center"
+        android:text="Tombol"
+        android:background="@color/blue_300"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
 </FrameLayout>
