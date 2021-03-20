@@ -15,7 +15,7 @@
         android:layout_height="150px"
         android:layout_gravity="center"
         android:text="Tombol"
-        android:background="@color/blue_300"
+        android:backgroundTint="@color/PrimaryDark"
         android:textColor="@color/black"
         android:textSize="20sp"/>
 </FrameLayout>
