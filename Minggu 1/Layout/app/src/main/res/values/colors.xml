@@ -12,7 +12,7 @@
     <color name="blue_100">#00AEFF</color>
     <color name="blue_300">#0F9CDD</color>
     <color name="blue_50">#07C5FF</color>
-    <color name="primary">#F500f7</color>
+    <color name="primary">#F50057</color>
     <color name="PrimaryDark">#C51162</color>
     <color name="colorAccent">#FF80AB</color>
 </resources>

@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Layout">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".LinearActivity">
+        <activity android:name=".TabelActivity"></activity>
+        <activity android:name=".FrameActivity" />
+        <activity android:name=".RelativeActivity" />
+        <activity android:name=".ConstraintActivity" />
+        <activity android:name=".MaterialDesignActivity" />
+        <activity android:name=".LinearActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
