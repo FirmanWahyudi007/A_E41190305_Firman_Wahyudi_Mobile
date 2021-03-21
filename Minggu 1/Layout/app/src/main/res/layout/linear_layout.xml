@@ -26,14 +26,13 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:backgroundTint="@color/purple_200"
         android:text="@string/send"/>
     <Button
         android:id="@+id/back"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:backgroundTint="@color/purple_500"
+        android:backgroundTint="@color/PrimaryDark"
         android:text="@string/back"/>
 
 </LinearLayout>

@@ -30,6 +30,7 @@
             android:textSize="18sp"
             android:textStyle="bold"/>
         <Button
+            android:id="@+id/RelativeButton"
             android:layout_marginLeft="140dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -39,12 +40,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Relativ Layout"
+            android:text="Relative Layout"
             android:paddingTop="105dp"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginLeft="140dp"/>
         <Button
+            android:id="@+id/ConstraintButton"
             android:layout_marginLeft="270dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -58,7 +60,7 @@
             android:paddingTop="105dp"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginLeft="280dp"/>
+            android:layout_marginLeft="283dp"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -68,6 +70,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp">
         <Button
+            android:id="@+id/FrameButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/rounded_button"
@@ -81,6 +84,7 @@
             android:textSize="18sp"
             android:textStyle="bold"/>
         <Button
+            android:id="@+id/TabelButton"
             android:layout_marginLeft="140dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -96,6 +100,7 @@
             android:textStyle="bold"
             android:layout_marginLeft="140dp"/>
         <Button
+            android:id="@+id/MaterialButton"
             android:layout_marginLeft="270dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -109,7 +114,7 @@
             android:paddingTop="105dp"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginLeft="280dp"/>
+            android:layout_marginLeft="286dp"/>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -119,6 +124,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp">
         <Button
+            android:id="@+id/ViewButton"
             android:paddingTop="10dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -134,6 +140,7 @@
             android:textStyle="bold"
             android:layout_marginLeft="10dp"/>
         <Button
+            android:id="@+id/HorizontalButton"
             android:layout_marginLeft="140dp"
             android:layout_width="100dp"
             android:layout_height="100dp"

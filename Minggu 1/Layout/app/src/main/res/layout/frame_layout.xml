@@ -11,7 +11,7 @@
         android:background="@color/primary"/>
 
     <Button
-        android:layout_width="350px"
+        android:layout_width="440px"
         android:layout_height="150px"
         android:layout_gravity="center"
         android:text="Tombol"
