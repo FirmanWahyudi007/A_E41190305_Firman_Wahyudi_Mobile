@@ -15,4 +15,7 @@
     <string name="tombol">Button</string>
     <string name="button">Tombol</string>
     <string name="bp">Blackpink Area</string>
+    <string name="name">Name</string>
+    <string name="register">Registrasi</string>
+    <string name="Form">Form</string>
 </resources>
