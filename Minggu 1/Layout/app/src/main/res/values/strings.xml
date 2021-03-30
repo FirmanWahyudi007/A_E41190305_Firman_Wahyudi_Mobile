@@ -18,4 +18,31 @@
     <string name="name">Name</string>
     <string name="register">Registrasi</string>
     <string name="Form">Form</string>
+    <string-array name="countries_array">
+        <item>Afganistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antartica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijin</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Spanyol</item>
+        <item>England</item>
+        <item>Rusia</item>
+        <item>France</item>
+        <item>Italy</item>
+    </string-array>
 </resources>
