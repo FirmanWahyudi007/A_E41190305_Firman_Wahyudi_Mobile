@@ -8,10 +8,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Dimas Maulana on 5/26/17.
- * Email : araymaulana66@gmail.com
- */
 
 public class MahasiswaAdapter extends RecyclerView.Adapter<MahasiswaAdapter.MahasiswaViewHolder> {
 
@@ -25,7 +21,7 @@ public class MahasiswaAdapter extends RecyclerView.Adapter<MahasiswaAdapter.Maha
     @Override
     public MahasiswaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.list_view, parent, false);
+        View view = layoutInflater.inflate(R.layout.row_mahasiswa, parent, false);
         return new MahasiswaViewHolder(view);
     }
 
