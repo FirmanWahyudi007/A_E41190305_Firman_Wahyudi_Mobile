@@ -21,11 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         editImplisit = findViewById(R.id.linkImplisit);
         btnImplisit = findViewById(R.id.BtnintenImplisit);
-
         editExplisit = findViewById(R.id.linkExplisit);
         btnExplisit = findViewById(R.id.BtnintentExplisit);
-
-
         btnImplisit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
         btnExplisit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,11 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                     Toast.makeText(getApplication(),"ERROR, Coba Lagi !",Toast.LENGTH_SHORT);
                 }
-
-
             }
         });
-
-
     }
 }
