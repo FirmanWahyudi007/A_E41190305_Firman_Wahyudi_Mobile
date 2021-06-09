@@ -19,11 +19,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        /* Menginisialisasi variable dengan Form User dan Form Password dari Layout LoginActivity */
         mViewUser=findViewById(R.id.et_emailSignin);
         mViewPassword =findViewById(R.id.et_passwordSignin);
-        /* Menjalankan Method razia() Jika tombol SignIn di keyboard di sentuh */
         mViewPassword.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -34,15 +31,12 @@ public class LoginActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        /* Menjalankan Method razia() jika merasakan tombol SignIn disentuh */
         findViewById(R.id.button_signinSignin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 razia();
             }
         });
-        /* Ke RegisterActivity jika merasakan tombol SignUp disentuh */
         findViewById(R.id.button_signupSignin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,8 +44,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
-    /** ke MainActivity jika data Status Login dari Data Preferences bernilai true */
     @Override
     protected void onStart() {
         super.onStart();
@@ -60,21 +52,13 @@ public class LoginActivity extends AppCompatActivity {
             finish();
         }
     }
-
-    /** Men-check inputan User dan Password dan Memberikan akses ke MainActivity */
     private void razia(){
-        /* Mereset semua Error dan fokus menjadi default */
         mViewUser.setError(null);
         mViewPassword.setError(null);
         View fokus = null;
         boolean cancel = false;
-
-        /* Mengambil text dari form User dan form Password dengan variable baru bertipe String*/
         String user = mViewUser.getText().toString();
         String password = mViewPassword.getText().toString();
-
-        /* Jika form user kosong atau TIDAK memenuhi kriteria di Method cekUser() maka, Set error
-         *  di Form User dengan menset variable fokus dan error di Viewnya juga cancel menjadi true*/
         if (TextUtils.isEmpty(user)){
             mViewUser.setError("This field is required");
             fokus = mViewUser;
@@ -84,8 +68,6 @@ public class LoginActivity extends AppCompatActivity {
             fokus = mViewUser;
             cancel = true;
         }
-
-        /* Sama syarat percabangannya dengan User seperti di atas. Bedanya ini untuk Form Password*/
         if (TextUtils.isEmpty(password)){
             mViewPassword.setError("This field is required");
             fokus = mViewPassword;
@@ -95,25 +77,17 @@ public class LoginActivity extends AppCompatActivity {
             fokus = mViewPassword;
             cancel = true;
         }
-
-        /* Jika cancel true, variable fokus mendapatkan fokus */
         if (cancel) fokus.requestFocus();
         else masuk();
     }
-
-    /** Menuju ke MainActivity dan Set User dan Status sedang login, di Preferences */
     private void masuk(){
         Preferences.setLoggedInUser(getBaseContext(),Preferences.getRegisteredUser(getBaseContext()));
         Preferences.setLoggedInStatus(getBaseContext(),true);
         startActivity(new Intent(getBaseContext(),MainActivity.class));finish();
     }
-
-    /** True jika parameter password sama dengan data password yang terdaftar dari Preferences */
     private boolean cekPassword(String password){
         return password.equals(Preferences.getRegisteredPass(getBaseContext()));
     }
-
-    /** True jika parameter user sama dengan data user yang terdaftar dari Preferences */
     private boolean cekUser(String user){
         return user.equals(Preferences.getRegisteredUser(getBaseContext()));
     }
