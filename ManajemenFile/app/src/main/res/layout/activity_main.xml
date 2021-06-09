@@ -52,7 +52,6 @@
         android:layout_marginBottom="0dp"
         android:onClick="savePrivate"
         android:text="@string/save_as_private" />
-
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"

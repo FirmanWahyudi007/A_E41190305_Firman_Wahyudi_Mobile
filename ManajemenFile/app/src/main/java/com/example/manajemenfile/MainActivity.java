@@ -33,9 +33,11 @@ public class MainActivity extends AppCompatActivity {
     public void savePublic(View view) {
         //Permission to access external storage
         int STORAGE_PERMISSION_CODE = 23;
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
+        ActivityCompat.requestPermissions(this, new String[]{
+                Manifest.permission.READ_EXTERNAL_STORAGE}, STORAGE_PERMISSION_CODE);
         String info = editText.getText().toString();
-        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);// Folder Name
+        File folder = Environment.getExternalStoragePublicDirectory(
+                Environment.DIRECTORY_DOWNLOADS);// Folder Name
         File myFile = new File(folder, "myData1.txt");// Filename
         writeData(myFile, info);
         editText.setText("");
@@ -56,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("TES");
             fileOutputStream = new FileOutputStream(myFile);
             fileOutputStream.write(data.getBytes());
-            Toast.makeText(this, "Done" + myFile.getAbsolutePath(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Done" + myFile.getAbsolutePath(),
+                    Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

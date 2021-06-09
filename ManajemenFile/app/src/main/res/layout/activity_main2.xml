@@ -28,7 +28,6 @@
         android:layout_alignParentEnd="true"
         android:onClick="getPublic"
         android:text="@string/show_public_data" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -40,7 +39,6 @@
         android:onClick="getPrivate"
         android:text="@string/show_private_data"
         tools:ignore="UnknownId" />
-
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"

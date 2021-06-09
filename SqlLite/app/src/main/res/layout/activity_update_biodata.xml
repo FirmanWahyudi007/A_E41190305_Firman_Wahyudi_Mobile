@@ -10,7 +10,6 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     tools:context=".UpdateBiodata">
-
     <EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
@@ -21,7 +20,6 @@
         android:maxLength="10">
         <requestFocus />
     </EditText>
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -101,7 +99,6 @@
         android:layout_below="@+id/textView5"
         android:maxLength="100"
         android:inputType="text" />
-
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -112,7 +109,6 @@
         android:drawableLeft="@drawable/icon_done"
         android:textColor="@color/black"
         android:text="Update" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"

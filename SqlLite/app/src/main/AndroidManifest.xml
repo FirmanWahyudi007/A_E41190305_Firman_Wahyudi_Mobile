@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SqlLite">
-        <activity android:name=".UpdateBiodata"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".UpdateBiodata" />
         <activity android:name=".LihatBiodata" />
         <activity android:name=".BuatBiodata" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

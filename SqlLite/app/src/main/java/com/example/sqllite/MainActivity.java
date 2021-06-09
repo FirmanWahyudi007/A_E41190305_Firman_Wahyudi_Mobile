@@ -39,6 +39,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        findViewById(R.id.button_logoutMain).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Menghapus Status login dan kembali ke Login Activity
+                Preferences.clearLoggedInUser(getBaseContext());
+                startActivity(new Intent(getBaseContext(),LoginActivity.class));
+                finish();
+            }
+        });
 
         ma = this;
         dbCenter = new DataHelper(this);
